@@ -1,0 +1,23 @@
+{
+  "name": "portifolio-api",
+  "version": "1.0.0",
+  "description": "Api para entrar em contato",
+  "main": "server.js",
+  "author": "Leonardo Adami",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "eslint": "8.52.0",
+    "nodemon": "^3.1.4",
+    "prettier": "3.1.0",
+    "prettier-eslint": "16.1.2"
+  }
+}
