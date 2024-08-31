@@ -1,0 +1,9 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Portifolio API",
+    "description": "Api para entrar em contato",
+    "version": "1.0.0"
+  },
+  "paths": {}
+}
