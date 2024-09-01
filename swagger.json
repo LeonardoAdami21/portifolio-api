@@ -5,5 +5,64 @@
     "description": "Api para entrar em contato",
     "version": "1.0.0"
   },
-  "paths": {}
+  "tags": [
+    {
+      "name": "Email",
+      "description": "Enviando email"
+    }
+  ],
+  "paths": {
+    "/contact": {
+      "post": {
+        "summary": "Enviando email",
+        "description": "Enviando email",
+        "tags": ["Email"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Email"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Email enviado com sucesso"
+          },
+          "400": {
+            "description": "Email não enviado"
+          },
+          "500": {
+            "description": "Erro ao enviar email"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Email": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
 }
