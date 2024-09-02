@@ -3,8 +3,17 @@
   "info": {
     "title": "Portifolio API",
     "description": "Api para entrar em contato",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "contact": {
+      "name": "Leonardo Adami",
+      "url": "https://github.com/LeonardoAdami21"
+    }
   },
+  "servers": [
+    {
+      "url": "http://localhost:7000"
+    }
+  ],
   "tags": [
     {
       "name": "Email",
