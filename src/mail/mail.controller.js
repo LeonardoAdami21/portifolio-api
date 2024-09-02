@@ -41,7 +41,8 @@ const sendEmail = async (req, res) => {
       text: `Nome: ${name}\nEmail: ${email}\nPhone: ${phone}\nMensagem: ${message}`,
     };
 
-    await transporter.sendMail(mailOptions)
+    await transporter
+      .sendMail(mailOptions)
       .then(() => {
         return res.status(201).json({ message: "Email enviado com sucesso!" });
       })
