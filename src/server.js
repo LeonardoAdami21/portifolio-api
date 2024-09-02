@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use("/api", swaggerUi.serve, swaggerUi.setup(swaggerDocJSON));
-app.set("Content-Type: text/html; charset=utf-8");
+app.set("Content-Type", "application/json");
 app.use(express.urlencoded({ extended: true }));
 app.use("/", mailerRouter);
 
